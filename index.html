@@ -1,261 +1,110 @@
-<!DOCTYPE html>
-<html><head>
-<meta http-equiv="content-type" content="text/html; charset=windows-1252"><meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-<style>
-body {margin:0;}
-
-.icon-bar {
-    width: 100%;
-    height:30%;
-    background-color: #000000;
-    overflow: auto;
-}
-
-.icon-bar a {
-    float: right;
-    width: 4%;
-    text-align: center;
-    padding: 12px 0;
-      border-top-style: none;
-    border-right-style: solid;
-    border-bottom-style: none;
-    border-left-style: solid;
-    border:-1px solid grey;
-    border-width: thin;
-    transition: all 0.3s ease;
-    color: white;
-    font-size: 20px;
-}
-
-.icon-bar a:hover {
-    background-color: grey;
-}
-
-.active {
-    background-color: #000000;
-}
-.btn{
-    float: right;
-    background:#03CCB2;
-    color:#000000;
-    margin-top:12px;
-    margin-right: 10px;
-    border:none;
-    font-size:100%;
-    width:140px;
-    height:25px;
-}
-.tab{
-    background-color: inherit;
-    float: right;
-     border-top-style: none;
-    border-right-style: solid;
-    border-bottom-style: none;
-    border-left-style: solid;
-    border: -1px solid grey;
-    outline: none;
-    cursor: pointer;
-    color:wheat;
-    width:250px;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-.img{
-    float:left;
-}
-.btn1{
-    background-color: inherit;
-    float: left;
-    border-top-style: none;
-    border-right-style: solid;
-    border-bottom-style: none;
-    border-left-style: solid;
-    border: -1px solid grey;
-    outline: none;
-    cursor: pointer;
-    color:white;
-    width:150px;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px; 
-}
-.cont{
-width: 100%;
-height: 350px;
-border-top-style: none;
-  border-right-style: solid;
-  border-bottom-style: none;
-    border-left-style: solid;
-    border:-1px solid grey;
-background-color:#1B1E1E;
-overflow: hidden;
-
-}
-.h1{
-    color: #03CCB2;
-    font-size: 22px;
-    margin-left: 150px;
-    font-weight: 80;
-}
-.h2{
-    color: whitesmoke;
-    font-size: 20px;
-    margin-left: 150px;
-    font-weight: 80;
-    margin-bottom: 55px;
-}
-.input1{
-    width:500px;
-    height:25px;
-    margin-top: 15px;
-    margin-left: 150px;
-}
-.input2{
-    width: 300px;
-    height:25px;
-    margin-top:15px;
-    margin-left:10px;
-}
-.btn2{
-
-    background:#03CCB2;
-    color:#000000;
-    margin-top:12px;
-    margin-left: 10px;
-    border:none;
-    font-size:100%;
-    width:150px;
-    height:30px;
-}
-.p1{
-   width: 90px;
-height: 2px;
-margin-top: 5px;
-margin-bottom: -9px;
-margin-left: 150px;
-margin-right: 0px;
-color: whitesmoke;
-   
-}
-.p2{
-    width: 90px;
-height: 15px;
-margin-top: 5px;
-margin-bottom: 1px;
-margin-left: 667px;
-margin-right: 290px;
-color: whitesmoke;
-}
-.tab1 {
-    width:100%;
-    overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
-}
-
-/* Style the buttons inside the tab */
-.tab1 button {
-    background-color: inherit;
-    float: left;
-    border: none;
-    outline: none;
-    cursor: pointer;
-    padding: 14px 16px;
-    transition: 0.3s;
-    font-size: 17px;
-}
-
-/* Change background color of buttons on hover */
-.tab1 button:hover {
-    background-color: #ddd;
-}
-
-/* Create an active/current tablink class */
-.tab1 button.active {
-    background-color: #ccc;
-}
-
-/* Style the tab content */
-.tabcontent {
-    display: none;
-    padding: 100px 2px;
+<!DOCTYPE html>    
+ <html>    
+  <html>
+    <head>    
+       <title>QuotesDaily</title>
+       <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+       <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">    
+       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.3/angular.min.js"></script>    
+       <script type="text/javascript" src="quotescontroller.js"></script>   
+       <link rel="stylesheet" href="app.css"> 
+     </head>
+      <header>
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-6">
+          <div class="logo"><p class="front">Quotes</p><p class="back">Daily</p></div>
+          </div>
+          <div class="col-sm-6">
+              <nav class="navbar navbar-expand-lg  float-right">
+                  <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                      <li class="nav-item active">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Features</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" href="#">Pricing</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link disabled" href="#">Disabled</a>
+                      </li>
+                    </ul>
+                  </div>
+                </nav>
+        </div>
+        </div>
+        </div>
+      </header>
+      <body  ng-app="quotesApp">
+        <section  class="intro-dashboard">
+          <div class="container">
+            <div class="row">
+          <div class="col-sm-6">  
+              <h1 class="heading">
+                 Your daily dose of life changing quotes..
+                </h1> 
+                <p>
+                 Every quote has a different motive 
+                </p>
+                <button type="button" class="btn btn-warning">See More Quotes</button>
+            </div>  
+            <div class="col-sm-6">
+            <img class="rounded-circle" src="">
+            </div>
+            </div>
+          </div> 
+        </section>
     
-    height:100%;
-    border: 1px solid #ccc;
-    border-top: none;
-}
-.p3{
-    font-size: 20px;
-    margin-left: 110px;
-}
-.b{
-    background:#03CCB2;
-    color:#000000;
-    margin-top:5px;
-    margin-left: 10px;
-    border:none;
-    font-size:100%;
-    width:20px;
-    height:4px;
-}
-
-</style>
-</head><body>
-
-<div class="icon-bar">
-    <img class="img" src="index_files/logo.png">
-    <button class="btn1">Video Indexer</button>
-  <a class="active" href="#"><i class="fa fa-home"></i></a> 
-  <a href="#"><i class="fa fa-search"></i></a>
-  <a href="#"><i class="fa fa-envelope"></i></a>
-  <a href="#"><i class="fa fa-globe"></i></a>
-  <a href="#"><i class="fa fa-trash"></i></a>
-  <button class="tab">Account info</button>
-  <button class="btn">Connect to Azure</button>
- 
-  
-</div>
-<div class="cont">
-<h1 class="h1">Search inside your videos</h1>
-<h1 class="h2">Find the exact moments you're looking for by text,by person ,or even by object</h1>
-<p class="p1">Find topics</p>
-<p class="p2">Find people</p>
-  <input class="input1" placeholder="Search for text,keywords,or visual content" type="name">
-  
-  <input class="input2" placeholder="Search for people and celebrities" type="name">
-  <button class="btn2">Search</button>
-</div>
-<div class="tab1">
-  <button class="tablinks" onclick="openCity(event, 'Account Videos')">Account Videos</button>
-  <button class="tablinks" onclick="openCity(event, 'Sample Videos')">Sample Videos</button>
-  <div id="Account Videos" class="tabcontent">
-  
-  <p class="p3">Upload Your First Video</p>
-  <button class="b"><Upload</button>
-</div>
-
-<div id="Sample Videos" class="tabcontent">
-
-   
-</div>   
-<script>
-function openCity(evt, cityName) {
-    var i, tabcontent, tablinks;
-    tabcontent = document.getElementsByClassName("tabcontent");
-    for (i = 0; i < tabcontent.length; i++) {
-        tabcontent[i].style.display = "none";
-    }
-    tablinks = document.getElementsByClassName("tablinks");
-    for (i = 0; i < tablinks.length; i++) {
-        tablinks[i].className = tablinks[i].className.replace(" active", "");
-    }
-    document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
-}
-</script> 
-
-
- 
-</body></html>
+         <section class="list">
+          <div class="title-area">
+            <h2>List of Quotes</h2>
+          </div>
+          <div class="container "
+         >
+            <div class="row" ng-controller="ListCtrl" >
+                   
+               
+              <div class="card" ng-repeat="q in quotes " >
+              
+                <img class="card-img-top" src={{q.imageUrl}}>
+             
+              <h5 class="card-title text-danger">Quote of the day</h5>
+              <p class="card-text">{{q.quote}}</p>
+              <div class="container">
+                <div class="row">
+                  <div class="col-sm-4">
+                    <a href=""><span class="share "><i class="material-icons">
+                      favorite
+                      </i></span>
+                      <p>{{q.likeCount}}</p></a>
+                  </div>
+                  <div class="col-sm-4">
+                   <a href=""><span class="icon"> <i class="material-icons">
+                    send
+                    </i></span>
+                    <p>{{q.shareCount}}</p></a>
+                  </div>
+                  <div class="col-sm-4">
+                    <a href=""><span> <i class="material-icons">
+                      sentiment_satisfied
+                       </i></span>
+                       <p>{{q.viewCount}}</p></a>
+                   </div>
+                </div>
+              </div>
+         <div ng-repeat="a in author">
+           <p>{{a.name}}</p>
+         </div>
+          
+         
+          </div>
+               
+                </div>
+          </div>  
+          </div> 
+         </section>   
+ </body>    
+ </html>    

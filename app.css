@@ -1,0 +1,143 @@
+.d-flex {
+    flex-grow: 1;
+    flex-wrap: wrap;
+    
+}
+.container {
+    position: relative;
+}
+.card {
+   padding: 20px;
+   flex: 1;
+   margin-left:10px;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .card {
+           flex-basis: 50%;
+    }
+} 
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .card {
+        flex-basis: 50%;
+ }
+} 
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .card {
+        flex-basis: 30%;
+ }
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .card {
+        flex-basis: 25%;
+ }
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .card {
+        flex-basis: 25%;
+ }
+}
+header  {
+    color: #111E6C;
+    margin-top: 0;
+    
+}
+header .front {
+    font-family: 'Coiny', cursive;
+    color:#111E6C;
+    font-size: 27px;
+    font-weight:bold;
+}
+header .back {
+   font-family: 'Coiny', cursive;
+    color: #FFC30B;
+    font-size: 27px;
+    font-weight:bold;
+}
+.logo {
+    margin-top: 30px;
+}
+nav {
+    margin-top: 20px;
+}
+.span {
+    margin-left: 0px;
+}
+.front,.back{
+    display: inline;
+    margin-left:0px;
+    text-align: left
+}
+.intro-dashboard {
+    background-color: #99ebdf;
+    padding: 50px;
+}
+.intro-dashboard  .heading{
+   font-family: 'Nunito Sans', sans-serif;
+   color:#111E6C;
+   font-weight: 800;
+   font-size: 45px;
+}
+.intro-dashboard button {
+    color:#ffffff;
+     font-weight: 400;
+}
+.intro-dashboard  p {
+    font-family:'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    color: #555;
+    text-align: left;
+    padding: 10px
+}
+img {
+    float: right;
+}
+.list {
+    padding-left: 90px;
+    padding-right: 90px;
+    background-color: rgb(245, 245, 245)
+    ;
+}
+
+.title-area h2 {
+    font-family:'Nunito Sans', sans-serif;
+    font-weight: 800;
+    font-size: 40px;
+    color: #FFC30B;
+    text-align: center;
+    padding: 10px
+}
+
+.title-area p {
+    font-family:'Nunito Sans', sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #555;
+    text-align: center;
+    padding: 10px
+}
+
+.filter-area {
+    padding: 40px
+}
+.filter-area label {
+    font-family:'Nunito Sans', sans-serif;
+    font-weight: 700;
+    font-size: 20px;
+    color: #111E6C;
+    padding: 10px
+}
+
+html,body{
+    margin:0;
+    padding: 0;
+}
